@@ -30,7 +30,7 @@ $(document).ready(function() {
     }
     
     // Load the data from the JSON file
-    $.getJSON('../json/Project.json', function(data) {
+    $.getJSON('json/Project.json', function(data) {
         displayProjects(data.projects);
     });
 
