@@ -43,11 +43,11 @@ header {
 /*-------------------------------------------*/
 
 .dropdown-content li a {
-    color: #000000; /* Adjust as needed */
     text-decoration: none;
     display: block;
     padding: 10px;
     pointer-events: all;
+    color: #000000; /* Black text */
 }
 
 
@@ -56,9 +56,18 @@ header {
     display: none;
 }
 
+.dropdown-btn + .dropdown-content {
+    visibility:hidden;
+    opacity:0;  
+    transition:visibility 0.1s, opacity 0.1s linear;
+}
+
 .dropdown-btn:focus + .dropdown-content,
 .dropdown-btn:active + .dropdown-content {
-    display: block;
+    /*display: block;*/
+    visibility:visible;
+    opacity:1;
+    
     position: absolute;
     background-color: #ffff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -82,7 +91,7 @@ header {
     text-decoration: inherit;
   }
 
-#panel-links{
+.panel-links{
     font-size: 1.5em;
     background-color: #ffff;
     color: #000000;
@@ -91,7 +100,7 @@ header {
     padding: 10px 20px;
 }
 
-#panel-links:hover {
+.panel-links:hover {
     background-color: #e5e1e2;
     border-radius: 10px;
 }
@@ -99,7 +108,8 @@ header {
 #projects-button{
     min-width: 40%;
     font-size: 1.2em;
-    border-radius: 10px;}
+    border-radius: 10px;
+}
 
 #linkedin {
     padding: 10px 20px;
@@ -140,15 +150,7 @@ header {
     cursor: pointer;
 }
   
-.arrow {
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 6px solid #fff;
-    transition: transform ease-in-out 0.3s;
-}
-  
 .dropdown-content {
-    display: none;
     width: 100%;
     padding: 0; /* Hide dropdown content by default */
     position: absolute; /* Position it relative to its parent */
@@ -173,10 +175,6 @@ header {
 
 .dropdown-btn:focus + .dropdown-content li {
     left: 0;
-}
-  
-.dropdown-btn:focus + .dropdown-content {
-  visibility: visible;
 }
 
 .dropdown-content li a:hover {
@@ -475,6 +473,10 @@ hr{
     }
     .buttonpane {
         display: none;
+    }
+
+    .dropdown-content {
+        display: block;
     }
     
     .dropdown {
