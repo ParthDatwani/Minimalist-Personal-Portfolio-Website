@@ -33,4 +33,11 @@ Feel free to fork this repository and submit pull requests to contribute to this
 ## License
 This project is open-source and available under the MIT License.
 
+## DEMO
+https://github.com/ParthDatwani/Minimalist-Personal-Portfolio-Website/assets/53040741/93711e8c-a7c1-4074-99ce-623409b867fa
+
+
 This README file serves as an introduction and guide for visitors to the GitHub repository hosting the portfolio's source code. It outlines the portfolio's key features, technologies used, how to set it up locally, how to contribute, licensing information, and how to connect with Parth Datwani.
+
+
+
