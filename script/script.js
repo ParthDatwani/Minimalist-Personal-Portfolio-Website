@@ -1,5 +1,5 @@
 // Load the data from the JSON file and update the HTML content
-fetch('../json/profiledata.json')
+fetch('json/profiledata.json')
     .then(response => response.json())
     .then(data => {
         document.getElementById('logo1').textContent = data.logo1;
