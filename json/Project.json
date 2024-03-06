@@ -1,0 +1,39 @@
+{
+  "projects": [
+      {
+          "toolUsed": "pbi",
+          "status":"active",
+          "imagePath": "../images/Sample.png",
+          "title": "Power BI",
+          "externalLink":"https://www.google.com",
+          "description": "Description for Project 1"
+      },
+      {
+        "toolUsed": "tableau",
+        "status":"closed",
+        "imagePath": "../images/Sample.png",
+        "title": "Tableau",
+        "externalLink":"https://www.google.com",
+        "description": "Description for Project 1"
+    },
+    {
+      "toolUsed": "python",
+      "status":"new",
+      "imagePath": "../images/Sample.png",
+      "title": "Python",
+      "externalLink":"https://www.google.com",
+      "description": "Description for Project 1"
+  },
+  {
+    "toolUsed": "ruby",
+    "status":"work",
+    "imagePath": "../images/Sample.png",
+    "title": "Ruby",
+    "externalLink":"https://www.google.com",
+    "description": "Description for Project 1"
+}
+  ]
+}
+
+
+

@@ -1,0 +1,600 @@
+html,body {
+    font-family: 'Open Sans';
+    margin: auto;
+    height: 100%;
+    width: 100%;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffff;
+}
+
+.dropdown {
+    display: none;
+}
+
+.buttonpane {
+    display: block;
+}
+
+
+/*--------------------------------------HEADER-------------------------------------------------------*/
+#logo1,#logo2 {
+    font-size: 3em; /* Adjust size as needed */
+    font-weight: bold;
+    color: black; /* This makes it black, adjust as per theme */
+    text-transform: uppercase; /* Adds styling to the text */
+    letter-spacing: 5px; /* Adjust as needed */
+}
+
+#logo1 {
+    display: block;
+}
+
+#logo2 {
+    display: none;
+}
+
+/*-------------------------------------------*/
+
+.dropdown-content li a {
+    color: #000000; /* Adjust as needed */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    pointer-events: all;
+}
+
+
+/* Initially hide dropdown */
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-btn:focus + .dropdown-content,
+.dropdown-btn:active + .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #ffff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/*------------------------------------------*/
+#resume,#projects-button {
+    padding: 10px 20px;
+    background-color: #ffff;
+    font-size: 1.5em;
+    border-radius: 20px;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+#resume:hover,#projects-button:hover{
+    background-color: #e5e1e2;
+}
+#resume a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+#panel-links{
+    font-size: 1.5em;
+    background-color: #ffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#panel-links:hover {
+    background-color: #e5e1e2;
+    border-radius: 10px;
+}
+
+#projects-button{
+    min-width: 40%;
+    font-size: 1.2em;
+    border-radius: 10px;}
+
+#linkedin {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    background-color: #ffff;
+    color: #0e76a8;
+    border: none;
+    background: none;
+    cursor: pointer;    
+}
+
+/*..................................................*/
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5e1e2;
+    margin: 5% 2% 5% 2%;
+    border-radius: 30px;
+}
+
+.dropdown {
+    max-width: 13em;
+    position: relative;
+    width: 100%;
+}
+  
+.dropdown-btn {
+    width: 100%;
+    color: #ffff;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffff;
+    font-size: 1em;
+    border-radius: 20px;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+  
+.arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: transform ease-in-out 0.3s;
+}
+  
+.dropdown-content {
+    display: none;
+    width: 100%;
+    padding: 0; /* Hide dropdown content by default */
+    position: absolute; /* Position it relative to its parent */
+    left: 50%; /* Start from the middle of the parent */
+    transform: translateX(-50%); /* Center it exactly */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional: Adds a slight shadow for depth */
+    z-index: 1; /* Ensure it's above other content */
+}
+.dropdown-content li {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    padding: 2px;
+}
+
+.dropdown-content li a {
+    color: #000000; /* Black text */
+    display: block; /* Make each link fill its container for easier clicking */
+}
+
+.dropdown-btn:focus + .dropdown-content li {
+    left: 0;
+}
+  
+.dropdown-btn:focus + .dropdown-content {
+  visibility: visible;
+}
+
+.dropdown-content li a:hover {
+    background: #cbc9ca; /* Apply hover effect to the link's background */
+}
+
+.dropdown-content li:hover {
+  background: #b7b1b4;
+}
+
+/*.................................*/
+
+#profile-image {
+    max-width: 30%;
+    min-width: 350px;
+    height: auto;
+    border-radius: 10%;
+    text-align: right;
+    border: #0000 10px;
+    overflow: hidden;
+}
+
+#name{
+    font-weight: bold;
+    font-size: 7em;
+    margin: auto;
+}
+
+#title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+#description {
+    width: 100%;
+    height: 45px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+}
+.text-content {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.portfolio {
+    width: auto;
+    height: 100%;
+    margin: 5px;
+    padding: 20px;
+    background-color: #ffff;
+}
+
+.updates {
+    width: auto;
+    height: 100%;
+    margin: 5px;
+    padding: 20px;
+    background-color: #ffff;
+}
+
+/*------------------------------About me---------------------------------------------------------------------*/
+
+.about-me {
+    display: flex;
+    margin: 10% 10% 10% 10%;
+    border: #cbc9ca 3px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 50%;
+    padding: 30px;
+    margin: auto;
+}
+
+hr{
+    width: 20%;
+    margin:3% 0;
+    height: 4px;
+    background-color: #333;  /* Modern Browsers */
+  }
+
+.about-text h2 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #333;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-image {
+    width: 50%;
+    border-radius: 20px;
+    background-color: #e5e1e2;
+    text-align: center; /* Align the image to the right */
+}
+
+.about-image img {
+    min-height: 500px; 
+    width: 100%;
+}
+
+/*---------------------------------------------------------End About me-------------------------------------------------------------*/
+
+/*---------------------------------------------------------Start Project-------------------------------------------------------------*/
+.projects{
+    /*background-color: #FFA500;*/
+    margin: auto;
+    text-align: center;
+}
+#project-text{
+    background-color: white;
+    font-size: 3em;
+    margin: auto;
+    padding: 40px 0 0 0;
+
+}
+.projectheading{
+    padding: 0 0 10px 0;
+}
+.projects hr{
+    background-color: #000000;
+    margin: 15px auto;
+    width: 15%;
+}
+
+.project-dropdown{
+    display: none;
+}
+#project-filters{
+    padding:2em;
+}
+
+.filter-btn{
+    padding: 10px 20px;
+    margin: 0 2em 0 2em;
+    background-color: #ffff;
+    font-size: 1.5em;
+    border-radius: 20px;
+    color: #000000;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.project-item {
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Required for absolute positioning of pseudo-element */
+}
+
+.project-item::before {
+    content: attr(data-link-name);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7); /* Semi-transparent overlay */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px; /* Adjust based on preference */
+    pointer-events: none; /* Ensures the link can still be clicked */
+}
+
+.project-item:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.project-item:hover {
+    border-color: #e5e1e2; /* Change to your preferred hover border color */
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.status-dot {
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+}
+
+.project-item h4 {
+    margin: 0;
+}
+
+.project-item p {
+    padding: 0 10px;
+    min-height: 52px; /* Adjust based on content to ensure at least two lines */
+}
+
+.project-item img {
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the area without leaving the container */
+}
+
+/* Add hover effect for filter buttons */
+.filter-btn:hover {
+    background-color: #e5e1e2;
+}
+
+/* Active filter button style */
+.filter-btn.active {
+    background-color: #e5e1e2;
+}
+
+/*---------------------------------------------------------End Project section-------------------------------------------------------------*/
+/*---------------------------------------------------------footer-----------------------------------------------------------------------*/
+
+.footer {
+    display: block;
+    justify-content: space-between;
+    padding: 20px; /* or any other color or gradient according to your theme */
+}
+
+.footer-line {
+    border: 2px solid #000000;
+    margin: 10em auto 5em;
+    width: 70%; /* or as per your design requirement */
+}
+
+.footer-content {
+    text-align: center;
+    background-color: #e5e1e2;
+    border-radius: 20px;
+    padding: 2em;
+    margin: auto 10%;
+}
+
+.footer-content h2 {
+    margin: 0;
+    max-width: 100%;
+    font-size: 7em; /* Large text for the name */
+    font-weight: 800; /* Adjust the weight as per your design */
+    color: #000; /* Font color */
+}
+
+.footer-links a {
+    display: inline-flex;
+    font-size: 1em; /* Each link on a new line */
+    color: #000; /* Link color */
+    text-decoration: none; /* No underline */
+    margin: 10px; /* Space between links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover for better user interaction */
+}
+
+/*-----------------------------------------------------END FOOTER----------------------------------------------------------------------*/
+/*---------------------------------------------------------End Normal HTML-------------------------------------------------------------*/
+
+
+/*-------------------------------------Only Responsive Design Below -------------------------------------------------------------*/
+/* Responsive Design */
+@media screen and (max-width: 1750px) {
+    #name{
+        font-size: 5em;
+    }
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    }
+}
+@media screen and (max-width: 1300px) {
+    body{
+        width: auto;
+        margin: 10px;
+    }
+    .buttonpane {
+        display: none;
+    }
+    
+    .dropdown {
+        display: block;
+    }
+
+    #logo1 {
+        display: none;
+    }
+
+    #name{
+        width:auto;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    #logo2 {
+        display: block;
+        padding: 0 50px 0 0;
+        font-size: 1.8em;
+    }
+    
+    .profile {
+        flex-direction: column;
+        margin: 50px 0 100px 0;
+        text-align: center;
+        min-height: 400px;
+        background-image: url('../images/Banner.png');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .text-content, #profile-image {
+        min-width: 100%;
+    }
+    
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-text, .about-image {
+        min-width: fit-content;        
+    }
+
+    .about-image{
+        max-width: 50%;
+    }
+
+    .about-text hr{
+        margin: auto;
+        width: 100%;
+    }
+
+    .about-image img {
+        min-height: calc(25%);/* Ensure image is not bigger than the container */
+    }
+
+    #project-filters,#profile-image {
+    display: none;
+    }
+
+    .project-dropdown{
+        display: block;
+    }
+    
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+        margin: auto;
+         
+    }
+
+    .project-item {
+        max-width: calc(90%);
+        margin: auto;
+    }
+
+
+    .footer-content h2 {
+        font-size: xx-large;
+    }
+    .footer-links a {
+        display: inline-flex; /* Each link on a new line */
+        color: #000; /* Link color */
+        text-decoration: none; /* No underline */
+        margin: 10px; /* Space between links */
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    .projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    }
+    
+    .about-me {
+        flex-direction: column;
+        justify-content: center;
+        margin: inherit;
+        overflow-wrap: break-word;
+    }
+
+    .about-text, .about-image {
+        min-width: fit-content;        
+    }
+
+    .about-text hr{
+        margin: auto;
+        width: 100%;
+    }
+
+    .about-image {
+        order: -1; /* Place the image above the text */
+    }
+
+    .about-image img {
+        max-width: 100%;
+        min-height: calc(25%);/* Ensure image is not bigger than the container */
+    }
+
+}
+
+/*--------------------------------------------END RESPNSIVE DESIGN-----------------------------------------------------------------*/
