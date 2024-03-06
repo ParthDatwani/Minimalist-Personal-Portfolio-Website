@@ -11,7 +11,7 @@ Welcome to the repository for my personal portfolio website. This site is design
 - **Projects**: Showcases your work in fultering categories like Power BI, Tableau, Python, and Ruby. Projects can be filtered by technology used.
 - **Footer**: Contains links to my LinkedIn, Kaggle, and Medium profiles for further engagement and connectivity.
 
-## Technologies Used
+## Codiing In
 
 - HTML5
 - CSS3
