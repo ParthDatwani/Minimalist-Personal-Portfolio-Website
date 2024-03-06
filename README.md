@@ -26,3 +26,11 @@ To view the portfolio, clone this repository and open `index.html` in your brows
 git clone https://github.com/YourUsername/portfolio.git
 cd portfolio
 open index.html
+```
+## Contributions
+Feel free to fork this repository and submit pull requests to contribute to this project. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is open-source and available under the MIT License.
+
+This README file serves as an introduction and guide for visitors to the GitHub repository hosting the portfolio's source code. It outlines the portfolio's key features, technologies used, how to set it up locally, how to contribute, licensing information, and how to connect with Parth Datwani.
