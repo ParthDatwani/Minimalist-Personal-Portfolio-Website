@@ -7,8 +7,8 @@ Welcome to the repository for my personal portfolio website. This site is design
 - **Responsive Layout**: Ensures a great viewing experience across devices of various sizes.
 - **Navigation**: Easy access to all sections of the portfolio through a fixed header with links and a mobile-friendly dropdown menu.
 - **Profile Section**: Features a large profile image, a brief introduction, and a button to quickly navigate to the projects section.
-- **About Me**: Provides detailed information about my professional background, skills, and interests.
-- **Projects**: Showcases my work in categories like Power BI, Tableau, Python, and Ruby. Projects can be filtered by technology used.
+- **About Me**: Can provide detailed professional background, skills, and interests.
+- **Projects**: Showcases your work in fultering categories like Power BI, Tableau, Python, and Ruby. Projects can be filtered by technology used.
 - **Footer**: Contains links to my LinkedIn, Kaggle, and Medium profiles for further engagement and connectivity.
 
 ## Technologies Used
